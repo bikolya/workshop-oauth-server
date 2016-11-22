@@ -7,6 +7,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'turbolinks'
 gem 'jquery-rails'
+gem 'devise'
 
 group :development do
   gem 'web-console'
