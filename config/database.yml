@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: postgres
+  pool: 5
+
+development:
+  <<: *default
+  database: foursquare_development
+
+test:
+  <<: *default
+  database: foursquare_test
+
+production:
+  <<: *default
+  database: foursquare_production
