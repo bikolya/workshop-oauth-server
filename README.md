@@ -1,24 +1,25 @@
-# README
+# OAuth server demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+You need [docker](https://docs.docker.com/engine/installation/) to be installed.
 
-* Ruby version
+1. Get the code.
 
-* System dependencies
+        % git clone git@github.com:bikolya/workshop-oauth-server.git
 
-* Configuration
+2. Build image.
 
-* Database creation
+        % docker-compose build
 
-* Database initialization
+3. Boot the app.
 
-* How to run the test suite
+        % docker-compose up
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Setup DB.
 
-* Deployment instructions
+        % docker-compose run web rake db:setup
 
-* ...
+5. Verify that the app is up and running.
+
+        % open http://localhost:3000

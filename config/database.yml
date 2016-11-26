@@ -8,6 +8,7 @@ default: &default
 development:
   <<: *default
   database: foursquare_development
+  host: db
 
 test:
   <<: *default
